@@ -2,6 +2,7 @@
 import DialogsHead from './partials/Head/DialogsHead';
 import DialogsBody from './partials/content/DialogsBody';
 import ChatBox from './partials/chatbox/ChatBox';
+import Users from './partials/users/Users';
 
 
 const Dialogs = () => {
@@ -12,6 +13,7 @@ const Dialogs = () => {
         <DialogsHead />
         <DialogsBody />
         <ChatBox />
+        <Users />
       </div>
     </div>
   );

@@ -3,23 +3,23 @@ import classes from './NavMenu.module.css'
 const NavMenu = () => {
   return (
     <div className={classes.NavMenu}>
-      <ul className="flex">
-        <NavLink activeClassName={classes.active} to="/profile">
-          <li className="p-2 m-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md active:bg-green-700 focus:outline-none hover:bg-green-700">Profile</li>
+      <div className="flex">
+        <NavLink activeClassName="text-red-500 border-b border-red-500" exact to="/" className="text-white mx-3 px-1 text-lg tracking-wider hover:text-red-500">
+          <span className="">Profile</span>
         </NavLink>
-        <NavLink activeClassName={classes.active} to="/dialogs">
-          <li className="p-2 m-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md active:bg-green-700 focus:outline-none hover:bg-green-700">Messages</li>
+        <NavLink activeClassName="text-red-500 border-b border-red-500" to="/dialogs" className="text-white mx-3 px-1 text-lg tracking-wider hover:text-red-500">
+          <span className="">Messages</span>
         </NavLink>
-        <NavLink activeClassName={classes.active} to="/news">
-          <li className="p-2 m-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md active:bg-green-700 focus:outline-none hover:bg-green-700">News</li>
+        <NavLink activeClassName="text-red-500 border-b border-red-500" exact to="/news" className="text-white mx-3 px-1 text-lg tracking-wider hover:text-red-500">
+          <span className="">News</span>
         </NavLink>
-        <NavLink activeClassName={classes.active} to="/music">
-          <li className="p-2 m-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md active:bg-green-700 focus:outline-none hover:bg-green-700">Music</li>
+        <NavLink activeClassName="text-red-500 border-b border-red-500" exact to="/music" className="text-white mx-3 px-1 text-lg tracking-wider hover:text-red-500">
+          <span className="">Music</span>
         </NavLink>
-        <NavLink activeClassName={classes.active} to="/settings">
-          <li className="p-2 m-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md active:bg-green-700 focus:outline-none hover:bg-green-700">Settings</li>
+        <NavLink activeClassName="text-red-500 border-b border-red-500" exact to="/settings" className="text-white mx-3 px-1 text-lg tracking-wider hover:text-red-500">
+          <span className="">Settings</span>
         </NavLink>
-      </ul>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ const App = () => {
       <div className="flex flex-col h-screen">
         <Header />
         <div className="flex-auto">
-          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/" component={Profile} />
           <Route path="/dialogs" component={Dialogs} />
         </div>
         <div className="bg-gray-50">
