@@ -1,4 +1,4 @@
-import defaultProfilePic from '../../assets/images/default-profile.jpg'
+import defaultProfilePic from '../../assets/images/defaultProfilePic.jpg'
 import Description from './Description/Description';
 
 const Profile = () => {
